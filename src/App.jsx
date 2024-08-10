@@ -8,6 +8,7 @@ import Launch from "./Launch";
 import Clicker from "./Clicker";
 import Counter from "./Counter";
 import HappySad from "./HappySad";
+import ColorBoxList from "./ColorBoxList";
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -17,6 +18,33 @@ import HappySad from "./HappySad";
 //   { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
+
+const colors = [
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "orange",
+  "purple",
+  "pink",
+  "brown",
+  "black",
+  "white",
+  "gray",
+  "cyan",
+  "magenta",
+  "lime",
+  "maroon",
+  "navy",
+  "olive",
+  "teal",
+  "aqua",
+  "violet",
+  "indigo",
+  "gold",
+  "silver",
+  "coral",
+];
 
 function App() {
   return (
@@ -29,8 +57,9 @@ function App() {
       {/* <Launch /> */}
       {/* <Clicker message="hello" buttonText="click to see hello" /> */}
       {/* <Clicker message="hi" buttonText="click to see nothello" /> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* <HappySad /> */}
+      <ColorBoxList colors={colors} />
     </>
   );
 }
