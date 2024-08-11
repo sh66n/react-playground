@@ -9,6 +9,9 @@ import Clicker from "./Clicker";
 import Counter from "./Counter";
 import HappySad from "./HappySad";
 import ColorBoxList from "./ColorBoxList";
+import EmojiClicker from "./EmojiClicker";
+import Player from "./Player";
+import ScoreKeeper from "./ScoreKeeper";
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -19,32 +22,32 @@ import ColorBoxList from "./ColorBoxList";
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
 
-const colors = [
-  "red",
-  "blue",
-  "green",
-  "yellow",
-  "orange",
-  "purple",
-  "pink",
-  "brown",
-  "black",
-  "white",
-  "gray",
-  "cyan",
-  "magenta",
-  "lime",
-  "maroon",
-  "navy",
-  "olive",
-  "teal",
-  "aqua",
-  "violet",
-  "indigo",
-  "gold",
-  "silver",
-  "coral",
-];
+// const colors = [
+//   "red",
+//   "blue",
+//   "green",
+//   "yellow",
+//   "orange",
+//   "purple",
+//   "pink",
+//   "brown",
+//   "black",
+//   "white",
+//   "gray",
+//   "cyan",
+//   "magenta",
+//   "lime",
+//   "maroon",
+//   "navy",
+//   "olive",
+//   "teal",
+//   "aqua",
+//   "violet",
+//   "indigo",
+//   "gold",
+//   "silver",
+//   "coral",
+// ];
 
 function App() {
   return (
@@ -59,7 +62,11 @@ function App() {
       {/* <Clicker message="hi" buttonText="click to see nothello" /> */}
       {/* <Counter /> */}
       {/* <HappySad /> */}
-      <ColorBoxList colors={colors} />
+      {/* <ColorBoxList colors={colors} /> */}
+      {/* <EmojiClicker /> */}
+      {/* <Player number={1} /> */}
+      <ScoreKeeper numPlayers={3} />
+      <ScoreKeeper numPlayers={5} target={3} />
     </>
   );
 }

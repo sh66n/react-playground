@@ -5,7 +5,10 @@ export default function Counter() {
   console.log(num);
   console.log("Counter() executed with num " + num);
   const updateNum = () => {
-    setNum(num + 1);
+    setNum((currNum) => currNum + 1);
+    setNum((currNum) => currNum + 1);
+    setNum((currNum) => currNum + 1);
+    setNum((currNum) => currNum + 1);
   };
   return (
     <>
