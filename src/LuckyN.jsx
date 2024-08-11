@@ -17,17 +17,16 @@ const sum = (arr) => {
   return sum;
 };
 
-export default function LuckyN({ numDice = 2, N = 7 }) {
+export default function LuckyN({ numDice = 2, winCheck }) {
   const [dice, setDice] = useState(() => getRolls(numDice));
-  const isWinner = sum(dice) === N;
-
+  const isWinner = winCheck(dice);
   const rollAgain = () => {
     setDice(getRolls(numDice));
   };
 
   return (
     <div className="LuckyN">
-      <h1>Lucky{N}</h1>
+      <h1>Lucky</h1>
       {isWinner && <h3>You win!</h3>}
       <Dice dice={dice} />
       <button onClick={rollAgain} style={{ margin: "4px" }}>

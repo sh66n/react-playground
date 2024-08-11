@@ -15,6 +15,16 @@ import ScoreKeeper from "./ScoreKeeper";
 import Die from "./Die";
 import Dice from "./Dice";
 import LuckyN from "./LuckyN";
+import Box from "./Box";
+import BoxList from "./BoxList";
+
+const sum = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+};
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -71,8 +81,22 @@ function App() {
       {/* <ScoreKeeper numPlayers={3} /> */}
       {/* <ScoreKeeper numPlayers={5} target={3} /> */}
       {/* <Dice dice={[2, 4, 5]} /> */}
-      <LuckyN />
-      <LuckyN numDice={10} N={24} />
+      {/* <LuckyN winCheck={(dice) => sum(dice) < 4} />
+      <LuckyN
+        winCheck={(dice) => {
+          for (let i = 0; i < dice.length - 1; i++) {
+            if (dice[i] === dice[i + 1]) return true;
+            else return false;
+          }
+        }}
+      /> */}
+      {/* <LuckyN
+        numDice={10}
+        winCheck={(dice) => {
+          return sum(dice) < 4;
+        }}
+      /> */}
+      <BoxList />
     </>
   );
 }
