@@ -17,14 +17,15 @@ import Dice from "./Dice";
 import LuckyN from "./LuckyN";
 import Box from "./Box";
 import BoxList from "./BoxList";
+import Form from "./Form";
 
-const sum = (arr) => {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-  }
-  return sum;
-};
+// const sum = (arr) => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// };
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -96,7 +97,8 @@ function App() {
           return sum(dice) < 4;
         }}
       /> */}
-      <BoxList />
+      {/* <BoxList /> */}
+      <Form />
     </>
   );
 }
