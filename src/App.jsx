@@ -18,6 +18,8 @@ import LuckyN from "./LuckyN";
 import Box from "./Box";
 import BoxList from "./BoxList";
 import Form from "./Form";
+import ShoppingItem from "./ShoppingItem";
+import ShoppingList from "./ShoppingList";
 
 // const sum = (arr) => {
 //   let sum = 0;
@@ -63,6 +65,14 @@ import Form from "./Form";
 //   "coral",
 // ];
 
+const list = [
+  { name: "eggs", quantity: 12, completed: true },
+  { name: "milk", quantity: 1, completed: false },
+  { name: "bacon", quantity: 15, completed: false },
+  { name: "avocados from mexico", quantity: 1, completed: true },
+  { name: "broccoli", quantity: 0, completed: true },
+];
+
 function App() {
   return (
     <>
@@ -98,7 +108,9 @@ function App() {
         }}
       /> */}
       {/* <BoxList /> */}
-      <Form />
+      {/* <Form /> */}
+      {/* <ShoppingItem item={{ name: "eggs", quantity: 12, completed: true }} /> */}
+      <ShoppingList list={list} />
     </>
   );
 }
