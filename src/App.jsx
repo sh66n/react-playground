@@ -12,6 +12,9 @@ import ColorBoxList from "./ColorBoxList";
 import EmojiClicker from "./EmojiClicker";
 import Player from "./Player";
 import ScoreKeeper from "./ScoreKeeper";
+import Die from "./Die";
+import Dice from "./Dice";
+import LuckyN from "./LuckyN";
 
 // const properties = [
 //   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -65,8 +68,11 @@ function App() {
       {/* <ColorBoxList colors={colors} /> */}
       {/* <EmojiClicker /> */}
       {/* <Player number={1} /> */}
-      <ScoreKeeper numPlayers={3} />
-      <ScoreKeeper numPlayers={5} target={3} />
+      {/* <ScoreKeeper numPlayers={3} /> */}
+      {/* <ScoreKeeper numPlayers={5} target={3} /> */}
+      {/* <Dice dice={[2, 4, 5]} /> */}
+      <LuckyN />
+      <LuckyN numDice={10} N={24} />
     </>
   );
 }
