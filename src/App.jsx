@@ -21,6 +21,8 @@ import Form from "./Form";
 import ShoppingItem from "./ShoppingItem";
 import ShoppingList from "./ShoppingList";
 import ReactHookForm from "./ReactHookForm";
+import Effects from "./Effects";
+import GitHubProfile from "./GitHubProfile";
 
 // const sum = (arr) => {
 //   let sum = 0;
@@ -111,8 +113,11 @@ function App() {
       {/* <BoxList /> */}
       {/* <Form /> */}
       {/* <ShoppingItem item={{ name: "eggs", quantity: 12, completed: true }} /> */}
-      <ShoppingList list={list} />
+      {/* <ShoppingList list={list} /> */}
       {/* <ReactHookForm /> */}
+
+      {/* <Effects /> */}
+      <GitHubProfile />
     </>
   );
 }

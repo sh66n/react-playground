@@ -9,6 +9,8 @@ export default function ReactHookForm({ modifyList }) {
     formState: { errors },
   } = useForm();
 
+  // console.log(register("name", { required: true }));
+
   const onSubmit = (data) => {
     modifyList(data);
   };
