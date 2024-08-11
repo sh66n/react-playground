@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ShoppingItem from "./ShoppingItem";
 import ShoppingForm from "./ShoppingForm";
+import ReactHookForm from "./ReactHookForm";
 
 export default function ShoppingList({ list }) {
   const [shopList, setShopList] = useState(list);
@@ -18,7 +19,7 @@ export default function ShoppingList({ list }) {
           return <ShoppingItem key={i} item={item} />;
         })}
       </ul>
-      <ShoppingForm modify={modifyList} />
+      <ReactHookForm modifyList={modifyList} />
     </div>
   );
 }

@@ -20,6 +20,7 @@ import BoxList from "./BoxList";
 import Form from "./Form";
 import ShoppingItem from "./ShoppingItem";
 import ShoppingList from "./ShoppingList";
+import ReactHookForm from "./ReactHookForm";
 
 // const sum = (arr) => {
 //   let sum = 0;
@@ -111,6 +112,7 @@ function App() {
       {/* <Form /> */}
       {/* <ShoppingItem item={{ name: "eggs", quantity: 12, completed: true }} /> */}
       <ShoppingList list={list} />
+      {/* <ReactHookForm /> */}
     </>
   );
 }
